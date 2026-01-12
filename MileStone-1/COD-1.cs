@@ -3,6 +3,7 @@ using System. Collections.Generic;
 
 
 // Also add DeleteEmployeeById and SortEmployees , these methods as well.
+// Add id validation so that no data can be added with same id
 
 public class Employee
 {
