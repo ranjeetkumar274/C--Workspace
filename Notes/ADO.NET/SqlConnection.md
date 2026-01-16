@@ -1,4 +1,4 @@
-**Understanding SqlConnection Before Writing Code
+#Understanding SqlConnection Before Writing Code
 
 In ADO.NET, the SqlConnection class represents a live communication channel between a C# application and a SQL Server database. This channel is not imaginary; it is a real network-level session that SQL Server recognizes and tracks. When a connection is opened, SQL Server allocates memory, assigns a session ID, applies security context, and prepares itself to receive commands from your application.
 
@@ -6,7 +6,7 @@ This means that creating a SqlConnection object is not the same as opening a con
 
 This distinction is extremely important and is often misunderstood by beginners.
 
-How a SqlConnection Is Introduced in a C# Program
+#How a SqlConnection Is Introduced in a C# Program
 
 Every ADO.NET program starts with namespaces, because ADO.NET classes live inside specific libraries provided by .NET.
 
@@ -17,7 +17,7 @@ using System.Data;
 using System.Data.SqlClient;
 
 
-Now let us understand why each namespace exists.
+#Now let us understand why each namespace exists.
 
 System is required for basic C# features such as Console, exceptions, and primitive types.
 System.Data contains base classes and interfaces for ADO.NET.
