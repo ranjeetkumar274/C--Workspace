@@ -1,0 +1,7 @@
+@model List<EmployeeManager.Models.Employee>
+
+    <h2>Show All</h2>
+
+@foreach(var v in Model){
+    <p>@v.EmpId : @v.Name</p>
+}

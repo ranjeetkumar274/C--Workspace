@@ -37,5 +37,32 @@ public class StudentController : Controller
         return View();
     }
 
+
+    public ActionResult UpdateStudent(int id)
+        {
+            var res = list.Find(a => a.StudentId == id);
+            if(res == null)
+            {
+                return NotFound();
+            }
+            return View(res);
+        }
+
+
+    [HttpPost]
+    public ActionResult UpdateStudent(Student newStd)
+        {
+            var res = list.Find(a => a.StudentId == newStd.StudentId);
+            if(res == null)
+            {
+                return NotFound();
+            }
+            res.StudentName = newStd.StudentName;
+            res.Age = newStd.Age;
+            res.Email = newStd.Email;
+
+            return RedirectToAction("ShowAll");
+        }
+
 }
 }

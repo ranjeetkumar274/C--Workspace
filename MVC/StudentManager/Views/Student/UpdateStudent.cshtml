@@ -1,0 +1,31 @@
+@model StudentManager.Models.Student
+
+@{
+    ViewBag.Title = "Edit Student";
+}
+
+<h2>Edit Student</h2>
+
+<form asp-action="UpdateStudent" method="post">
+    <input type="hidden" asp-for="@Model.StudentId">
+
+    <div>
+       @Html.LabelFor(m => m.StudentName)
+       @Html.TextBoxFor(m => m.StudentName)
+       @Html.ValidationMessageFor(m => m.StudentName)
+    </div>
+
+    <div>
+       @Html.LabelFor(m => m.Age)
+       @Html.TextBoxFor(m => m.Age)
+       @Html.ValidationMessageFor(m => m.Age)
+    </div>
+
+    <div>
+       @Html.LabelFor(m => m.Email)
+       @Html.TextBoxFor(m => m.Email);
+       @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <button type="submit">Update</button>
+</form>
