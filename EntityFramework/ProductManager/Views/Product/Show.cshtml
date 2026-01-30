@@ -1,0 +1,5 @@
+@model List<ProductManager.Models.Product>
+
+@foreach(var v in Model){
+    <p>@v.ProductId : @v.Name : @v.Price</p>
+}
