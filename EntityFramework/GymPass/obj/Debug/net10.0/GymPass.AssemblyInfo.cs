@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymPass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46199ea63a060da0cea2bf35ae514b272f9dfde3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82e6d29b0b875a9feb415368d26f8d4435eb5e5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymPass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymPass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

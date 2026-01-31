@@ -12,12 +12,6 @@ namespace GymPass.Controllers
             cont = context;
         }
 
-        public IActionResult Index()
-        {
-            var list = cont.Passes.ToList();
-            return View(list);
-        }
-
         public IActionResult Add()
         {
             return View();
@@ -29,7 +23,8 @@ namespace GymPass.Controllers
             if (ModelState.IsValid)
             {
                 cont.Passes.Add(p);
-                return RedirectToAction("Index");
+                cont.SaveChanges();
+                return RedirectToAction("ShowAll");
             }
             return View(p);
         }
@@ -37,7 +32,8 @@ namespace GymPass.Controllers
 
         public IActionResult ShowAll()
         {
-            return RedirectToAction("Index");
+           var list = cont.Passes.ToList();
+           return View(list);
         }
 
     }

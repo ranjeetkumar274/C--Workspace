@@ -1,0 +1,5 @@
+@model List<Project3.Models.Employee>
+
+@foreach(var v in Model){
+    <p>@v.EmployeeId : @v.Name : @v.Salary</p>
+}

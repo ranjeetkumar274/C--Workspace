@@ -1,0 +1,7 @@
+@model Project3.Models.Employee
+
+<form asp-action="Add" method="post">
+    <input asp-for=@Model.Name placeholder="Enter Name"/>
+    <input asp-for=@Model.Salary placeholder="Enter Salary"/>
+    <button type="submit">Add</button>
+</form>
