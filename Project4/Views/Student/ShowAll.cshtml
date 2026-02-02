@@ -1,0 +1,5 @@
+@model List<Project4.Models.Student>
+
+@foreach(var v in Model){
+    <p>@v.StudentID : @v.Name : @v.Course : @v.Year : @v.GPA</p>
+}

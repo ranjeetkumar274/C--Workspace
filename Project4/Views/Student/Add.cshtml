@@ -1,0 +1,10 @@
+@model Project4.Models.Student
+
+<form asp-action=
+"Add" method="post">
+    <input asp-for=@Model.Name placeholder="Enter Name" />
+    <input asp-for=@Model.Course placeholder="Enter Course" />
+    <input asp-for=@Model.Year placeholder="Enter Year" />
+    <input asp-for=@Model.GPA placeholder="Enter GPA" />
+    <button type="submit">Add</button>
+</form>

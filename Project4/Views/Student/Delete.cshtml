@@ -1,0 +1,13 @@
+@model Project4.Models.Student
+
+<p>Are you sure you want to delete?</p>
+
+<h3>@Model.Name</h3>
+<h3>@Model.Course</h3>
+<h3>@Model.Year</h3>
+<h3>@Model.GPA</h3>
+
+<form asp-action="Delete" method="post">
+    <button type="submit">Delete</button>
+    <a asp-action="ShowAll">Cancel</a>
+</form>
