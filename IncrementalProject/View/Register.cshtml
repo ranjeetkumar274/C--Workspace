@@ -1,0 +1,12 @@
+@model dotnetapp.Models.RegisterViewModel
+ 
+<h2> Register </h2>
+<form asp-action="Register" method="Post">
+    <label>Email</label>
+    <input asp-for="Email" name="Email" class="form-control">
+    <label>Password</label>
+    <input asp-for="Password" name="Password" class="form-control">
+    <label>Confirm password</label>
+    <input asp-for="ConfirmPassword" name="ConfirmPassword" class="form-control">
+    <button type="submit">Register</button>
+</form>
