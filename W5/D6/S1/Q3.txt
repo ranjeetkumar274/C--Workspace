@@ -1,0 +1,59 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+<body>
+    <h1>Word Manipulation</h1>
+    <div>
+        <label for="sentenceInput">Enter a sentence</label>
+        <input type="text" id= "sentenceInput">
+    </div>
+   <button onclick="charManipulation()">Manipulate String</button>
+   <div id = "output">
+    <span id="s1"></span>
+    <span id="s2"></span>
+    <span id="s3"></span>
+    <span id="s4"></span>
+   </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+script.ts
+
+
+
+function charManipulation()
+{
+    var sentenceValue = (<HTMLInputElement>document.getElementById("sentenceInput")).value;
+        if(!sentenceValue)
+        {
+            document.getElementById("s1").innerHTML = "Please enter a sentence!";
+            return;
+        }
+        var upperCase = sentenceValue.toUpperCase();
+        var lowerCase = sentenceValue.toLocaleLowerCase();
+        var revString = "";
+        for(let i = sentenceValue.length-1;i>=0;i--)
+        {
+            revString = revString + sentenceValue[i];
+        }
+
+        document.getElementById("s1").innerHTML = "Original: " + sentenceValue;
+        document.getElementById("s2").innerHTML = "Uppercase: "+upperCase;
+        document.getElementById("s3").innerHTML = "Lowercase: "+lowerCase;
+        document.getElementById("s4").innerHTML = "Reversed: " +revString
+
+
+}
