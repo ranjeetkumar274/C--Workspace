@@ -1,0 +1,100 @@
+index.html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>array operations</title>
+   
+</head>
+<body>
+    <h1>array operations</h1>
+    <div>
+        <label>Enter Number 1<span style="color: red;"></span></label>"
+        <input type="number" name = "num1" id="num1">
+    </div>
+    <div>
+        <label>Enter Number 2<span style="color: red;"></span></label>"
+        <input type="number" name = "num2" id="num2">
+    </div>
+    <div>
+        <label>Enter Number 3<span style="color: red;"></span></label>"
+        <input type="number" name = "num3" id="num3">
+    </div>
+    <div>
+        <label>Enter Number 4<span style="color: red;"></span></label>"
+        <input type="number" name = "num4" id="num4">
+    </div>
+    <div>
+        <label>Enter Number 5<span style="color: red;"></span></label>"
+        <input type="number" name = "num5" id="num5">
+    </div>
+    <button id= "calculateButton" onclick="calculate()">Calculate</button>
+    <div id = "result">
+        <p id = "errorMessage" style="color: red;"></p>
+    </div>
+    <div id = "sumOfEven">
+        <span id = "sp1"></span>
+    </div>
+    <div id = "numbersGreaterThan5">
+        <span id = "sp2"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+script.ts
+
+
+function calculate()
+{
+    var num1 = Number((<HTMLInputElement>document.getElementById("num1")).value);
+    var num2 = Number((<HTMLInputElement>document.getElementById("num2")).value);
+    var num3 = Number((<HTMLInputElement>document.getElementById("num3")).value);
+    var num4 = Number((<HTMLInputElement>document.getElementById("num4")).value);
+    var num5 = Number((<HTMLInputElement>document.getElementById("num5")).value);
+    var numArr:number[] = [num1, num2, num3, num4, num5];
+
+    if(!num1 || !num2 || !num3 || !num4 || !num5 )
+    {
+        document.getElementById("errorMessage").innerHTML = "enter all the numbers";
+        return;
+    }
+
+    let nums: number[] = numberMoreThan5(numArr);
+    let sum: number = sumEven(numArr);
+
+    document.getElementById("sp1").innerHTML = "Sum of even numbers: "+sum.toString();
+    document.getElementById("sp2").innerHTML = "Number greater than 5: "+nums.join(',');
+    
+}
+
+function numberMoreThan5(arr: number[]): number[] 
+{
+   let bigArr: number[]=[];
+   arr.forEach(e=>{
+    if(e>=5)
+    {
+        bigArr.push(e);
+    }
+   });
+   return bigArr;
+}
+function sumEven(arr: number[]): number 
+{
+    var sumOfEven = 0;
+    arr.forEach(e=>{
+        if(e%2==0)
+        {
+            sumOfEven +=e;
+        }
+    });
+    return sumOfEven;
+}
+
