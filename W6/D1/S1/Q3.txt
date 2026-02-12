@@ -1,0 +1,52 @@
+.ts
+import { Component } from '@angular/core';
+import { Student } from './student.model';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'angularapp';
+
+  studentData:Student[]=[
+    {
+      id:1,name:'John Doe', course:'Mathematics', grade:'A'
+    },
+    {
+      id:2,name:'Jane Smith', course:'Science', grade:'B'
+    },
+  ];
+}
+
+.model.ts
+export interface Student{
+    id:number;
+    name:string;
+    course:string;
+    grade:string;
+}
+
+
+.html
+
+<h1>Student List</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of studentData">
+      <td>{{i.id}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.course}}</td>
+      <td>{{i.grade}}</td>
+    </tr>
+  </tbody>
+</table>
