@@ -1,0 +1,422 @@
+📘 Angular Complete Syllabus
+🧭 PHASE 1 – Angular Foundations
+1. Introduction to Angular
+
+What is Angular?
+
+Evolution: AngularJS vs Angular (2+)
+
+Why Angular for enterprise apps?
+
+SPA vs MPA
+
+Angular Architecture Overview
+
+Angular vs React vs Vue (conceptual comparison)
+
+Angular CLI – Purpose and internal workflow
+
+Project structure deep dive
+
+2. Environment Setup & Tooling
+
+Node.js and npm
+
+Angular CLI installation
+
+ng new project structure analysis
+
+Angular workspace configuration (angular.json)
+
+TypeScript configuration (tsconfig.json)
+
+Development server & build process
+
+AOT vs JIT compilation
+
+Angular DevTools
+
+🧱 PHASE 2 – Core Angular Architecture
+3. Angular Architecture Internals
+
+Modules (NgModules)
+
+Components
+
+Templates
+
+Metadata
+
+Decorators
+
+Dependency Injection
+
+Change Detection mechanism
+
+Zone.js
+
+Rendering pipeline
+
+🧩 PHASE 3 – Components Deep Dive
+4. Components (Complete Theory)
+
+What is a component?
+
+Component lifecycle
+
+Component metadata
+
+Template & Style URLs
+
+Inline vs External templates
+
+View encapsulation types
+
+Component communication patterns
+
+Smart vs Dumb components
+
+4.1 Component Lifecycle Hooks
+
+constructor()
+
+ngOnChanges()
+
+ngOnInit()
+
+ngDoCheck()
+
+ngAfterContentInit()
+
+ngAfterContentChecked()
+
+ngAfterViewInit()
+
+ngAfterViewChecked()
+
+ngOnDestroy()
+
+🔄 PHASE 4 – Data Binding (Core Mechanism)
+5. Data Binding
+
+What is Data Binding?
+
+One-way vs Two-way binding
+
+String interpolation
+
+Property binding
+
+Event binding
+
+Two-way binding syntax
+
+Custom two-way binding
+
+🔌 PHASE 5 – Component Communication
+6. @Input and @Output
+
+Parent to child communication
+
+Child to parent communication
+
+EventEmitter
+
+Data flow architecture
+
+ViewChild & ContentChild
+
+Template reference variables
+
+Service-based communication
+
+🧾 PHASE 6 – Directives
+7. Directives (Complete Theory)
+7.1 Types of Directives
+
+Structural Directives
+
+*ngIf
+
+*ngFor
+
+*ngSwitch
+
+Attribute Directives
+
+ngClass
+
+ngStyle
+
+Custom Directives
+
+How Angular compiles directives
+
+Structural directive micro-syntax
+
+Directive lifecycle
+
+🔁 PHASE 7 – Pipes
+8. Pipes
+
+What are pipes?
+
+Built-in pipes:
+
+DatePipe
+
+CurrencyPipe
+
+DecimalPipe
+
+PercentPipe
+
+SlicePipe
+
+AsyncPipe
+
+JsonPipe
+
+Pure vs Impure pipes
+
+Custom pipes
+
+Async pipe with Observables
+
+📄 PHASE 8 – Forms (Very Important)
+9. Angular Forms Overview
+
+Template-driven forms
+
+Reactive forms
+
+Differences between them
+
+When to use which?
+
+10. Reactive Forms (Deep Dive)
+
+FormControl
+
+FormGroup
+
+FormArray
+
+FormBuilder
+
+setValue vs patchValue
+
+Form lifecycle
+
+Nested forms
+
+Dynamic forms
+
+11. Form Validation
+
+Built-in validators
+
+Custom validators
+
+Async validators
+
+Cross-field validation
+
+Error handling patterns
+
+Validation states
+
+Control states (touched, dirty, valid, invalid, pending)
+
+🌐 PHASE 9 – HTTP & Backend Communication
+12. HTTP Client
+
+HttpClientModule
+
+HTTP methods (GET, POST, PUT, DELETE, PATCH)
+
+Observables in HTTP
+
+Interceptors
+
+Headers
+
+Error handling
+
+Retry logic
+
+HTTP Params
+
+Caching strategies
+
+🔄 PHASE 10 – Observables & RxJS
+13. RxJS (Reactive Programming)
+
+What is reactive programming?
+
+Observable vs Promise
+
+Cold vs Hot Observables
+
+Subject, BehaviorSubject, ReplaySubject
+
+Operators:
+
+map
+
+filter
+
+switchMap
+
+mergeMap
+
+concatMap
+
+tap
+
+debounceTime
+
+distinctUntilChanged
+
+takeUntil
+
+combineLatest
+
+forkJoin
+
+Subscription management
+
+Memory leaks & unsubscribe patterns
+
+Async pipe usage
+
+🧠 PHASE 11 – Services & Dependency Injection
+14. Services
+
+What is a service?
+
+Service creation
+
+Injectable decorator
+
+providedIn root vs module
+
+Singleton pattern
+
+15. Dependency Injection
+
+Injector hierarchy
+
+DI tree
+
+Providers
+
+useClass, useValue, useFactory
+
+Multi providers
+
+InjectionToken
+
+🛣 PHASE 12 – Routing
+16. Angular Routing
+
+RouterModule
+
+Route configuration
+
+Route parameters
+
+Query parameters
+
+Child routes
+
+Lazy loading
+
+Guards:
+
+CanActivate
+
+CanDeactivate
+
+CanLoad
+
+Route resolvers
+
+Wildcard routes
+
+🏗 PHASE 13 – Advanced Angular Concepts
+17. Change Detection
+
+Default strategy
+
+OnPush strategy
+
+Change detection cycle
+
+Zone.js role
+
+Manual change detection
+
+18. Performance Optimization
+
+Lazy loading
+
+AOT
+
+TrackBy in ngFor
+
+Pure pipes
+
+Memoization
+
+Virtual scrolling
+
+19. Angular Modules
+
+Feature modules
+
+Shared modules
+
+Core modules
+
+Lazy loaded modules
+
+🧪 PHASE 14 – Testing
+20. Angular Testing
+
+Unit testing
+
+Jasmine
+
+Karma
+
+TestBed
+
+Component testing
+
+Service testing
+
+HTTP testing
+
+Mocking dependencies
+
+🏁 PHASE 15 – Production & Deployment
+21. Build & Deployment
+
+Production builds
+
+Environment files
+
+File replacements
+
+Optimization flags
+
+Hosting on:
+
+Firebase
+
+Netlify
+
+Vercel
+
+Traditional server
